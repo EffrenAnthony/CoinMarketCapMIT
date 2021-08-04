@@ -1,38 +1,87 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.currency_info{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-evenly;
+  font-size: 18px;
 }
 
-.App-link {
-  color: #61dafb;
+.suply{
+  background-color: rgba(38, 0, 255, 0.123);
+  color: rgb(13, 0, 87);
+  padding: 20px;
+  border-radius: 5px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.value{
+  background-color: rgba(0, 217, 255, 0.089);
+  color: rgb(1, 88, 104);
+  padding: 20px;
+  border-radius: 5px;
+}
+.status{
+  padding: 20px;
+  border-radius: 5px;
+}
+.status.up{
+  background-color: rgba(0, 255, 128, 0.13);
+  color: rgb(0, 119, 60);
+}
+
+.status.down{
+  background-color: rgba(255, 8, 0, 0.151);
+  color: rgb(119, 0, 0);
+}
+
+.volume{
+  background-color: rgba(255, 0, 221, 0.178);
+  color: rgb(77, 0, 66);
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.up-pill{
+  background-color: rgba(0, 255, 128, 0.514);
+  color: rgb(0, 119, 60);
+  border-radius: 100px;
+  padding: 5px;
+  font-size: 12px;
+}
+
+
+.down-pill{
+  background-color: rgba(255, 0, 0, 0.452);
+  color: rgb(128, 0, 0);
+  border-radius: 100px;
+  padding: 5px;
+  font-size: 12px;
+}
+
+.col-sm-3:last-child{
+  padding-left: 0;
+}
+
+.list-group{
+  height: 80vh;
+  overflow-y: scroll;
+  scrollbar-width: none;
+}
+.list-group::-webkit-scrollbar{
+      display: none;
   }
-  to {
-    transform: rotate(360deg);
-  }
+
+.list-group-item.active{
+  background-color: rgb(243, 243, 243) !important;
+  color: rgb(0, 0, 0) !important;
+  border-color: rgb(0, 0, 0) !important;
+  border: 3px solid rgb(0, 0, 0) !important;
+}
+
+.alert-primary {
+  color: #ffffff !important;
+  background-color: #000000 !important;
+  border-color: #000000 !important;
+}
+
+.badge.rounded-pill.bg-primary{
+  background-color: #000000 !important;
+  counter-reset: #fff;
 }
