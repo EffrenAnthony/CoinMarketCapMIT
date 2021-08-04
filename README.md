@@ -43,6 +43,10 @@ npm start
 - Get more data from the API to draw graphs
 - Add an input to search a currency
 
+## Overview
+
+![overview](./overview.png)
+
 ## Licence
 
 [MIT](https://choosealicense.com/licenses/mit/)
